@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-
+import heroImg from '../images/hero1.jpg';
 
 const HeroContainer = styled.div`
-background: url(/images/gatsby-icon.png);
+background: url(${heroImg});
 background-repeat: no-repeat;
 background-size: cover;
 border-bottom: 5px solid #3f72af;
