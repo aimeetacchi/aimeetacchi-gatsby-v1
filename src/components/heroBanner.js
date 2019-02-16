@@ -57,7 +57,7 @@ class HeroBanner extends Component {
         return (
             <HeroContainer>
                 <HeroContent>
-                    <HeroH1>Need a Website? I'm {this.props.name}, a Front-end Web Developer</HeroH1>
+                    <HeroH1>I'm {this.props.name}, a Front-end Web Developer</HeroH1>
                     <HeroH2>Building Responsive Websites</HeroH2>
                 </HeroContent>
             </HeroContainer>
