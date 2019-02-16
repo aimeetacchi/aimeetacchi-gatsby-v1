@@ -4,6 +4,7 @@ module.exports = {
     description: `I'm Aimee a Front-end developer from Dunstable, Bedfordshire, UK. I create beautiful stylish responsive websites and Javascript apps.`,
     siteName: '> _Aimee Tacchi',
     author: `Aimee Tacchi`,
+    siteUrl: ``,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -30,6 +31,24 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: "pages",
+      }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-prismjs`,
+        ]
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
