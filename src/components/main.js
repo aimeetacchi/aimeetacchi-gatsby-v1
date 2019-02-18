@@ -1,14 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Project from './project'
-import data from '../data/data'
+import MyContext from './MyContext'
 
-class Main extends React.Component {
-
-    state = {
-        data: data,
-    }
-
-
+class Main extends Component {
 
     render() {
         return (
@@ -24,9 +18,18 @@ class Main extends React.Component {
                 </div>
                 <div className="recent-work">
 
-                    {this.state.data.map((project, i) => 
-                        <Project key={i} project={project} />
-                        )}
+                    <MyContext.Consumer>
+                    {(context) => (
+                        <>
+                        {context.state.data.map((project, i) => 
+                              <Project key={i} project={project} />
+                               )}
+                               </>
+                    )}
+                    </MyContext.Consumer>
+                    
+                    
+                    
 
                 </div>
 

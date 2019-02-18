@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
+import MyProvider from './MyProvider'
+
 import styled from 'styled-components'
 import Header from '../components/header'
 import './layout.scss'
@@ -30,15 +32,17 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
-        <Header siteName={data.site.siteMetadata.siteName} />
-        {children}
-        <FooterStyle danger>
-          {data.site.siteMetadata.author} | Front End Developer © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </FooterStyle>
-      </>
+      <MyProvider>
+        <>
+          <Header siteName={data.site.siteMetadata.siteName} />
+          {children}
+          <FooterStyle danger>
+            {data.site.siteMetadata.author} | Front End Developer © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </FooterStyle>
+        </>
+      </MyProvider>
     )}
   />
 )
