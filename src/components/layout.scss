@@ -16,6 +16,12 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+a {
+  color: $color_light;
+  text-decoration: none;
+}
+
 body {
   font-family: $font_primary;
   font-weight: normal;

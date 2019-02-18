@@ -28,7 +28,7 @@ function BlogPost(props) {
                 <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
                 {/* using post variable to get .html from graphql */}
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
-                <Link to="/page-2/">Return to Blog</Link>
+                <Link to="/blog/">Return to Blog</Link>
             </div>
         </Layout>
     )

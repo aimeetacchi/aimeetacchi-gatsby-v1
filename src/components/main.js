@@ -1,5 +1,5 @@
 import React from 'react'
-// import Project from './Project'
+import Project from './project'
 import data from '../data/data'
 
 class Main extends React.Component {
@@ -24,15 +24,9 @@ class Main extends React.Component {
                 </div>
                 <div className="recent-work">
 
-                    {this.state.data.map((project, i) =>
-                        // <Project key={i} project={project} />
-                        <div key={i}>
-                            <h2>{project.project_title}</h2>
-                            <img src='{project_img}' alt='project work' />
-                            <p>{project.project_short_description}</p>
-                            <a href='{project.project_link}'>Link</a>
-                        </div>
-                    )}
+                    {this.state.data.map((project, i) => 
+                        <Project key={i} project={project} />
+                        )}
 
                 </div>
 
