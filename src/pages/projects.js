@@ -8,7 +8,7 @@ class Projects extends React.Component {
             <Layout>
                 <div className="container">
                     <h2>Projects..</h2>
-                    <p>Projects Heres --- Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rem dolorum illo architecto molestias quae aliquid eligendi similique est, alias, tenetur earum autem nisi praesentium assumenda, porro voluptatum culpa et</p>
+                    <p>Projects Here - Page coming soon.</p>
                 </div>
             </Layout>
         )

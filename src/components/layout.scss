@@ -67,8 +67,9 @@ h3 {
   line-height: 1.3;
 }
 h4 {
-  font-size: 1rem;
-  line-height: 1.1;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.3;
 }
 
 p {
@@ -138,9 +139,92 @@ ul {
   font-weight: 700;
 }
 
+.recent-work {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+
+  @media (min-width: 680px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 1em;
+      padding: .5em 3em;
+  }
+
+    .recent-work-container {
+      box-shadow: 0 0 2rem RGBA(0, 0, 0, 0.5);
+      position: relative;
+      margin-bottom: 3em;
+      overflow: hidden;
+
+      @media (min-width: 680px) {
+        flex-basis: 47%;
+        margin-bottom: 1em;
+      }
+    }
+}
 
 
 
+.text-container {
+    position: absolute;
+    transition: .5s ease;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    background-color: #EEEEEE;
+    text-align: center;
+    
+    @media screen and (min-width: 680px) {
+      width: 90%;
+  }
+
+  .text {
+    width: 100%;
+    text-align: center;
+    color: #222831;
+    padding: 1em;
+
+    @media screen and (min-width: 680px) {
+      padding: .5em;
+    }
+  }
+}
+.recent-work .recent-work-container:hover .text-container {
+  opacity: 1;
+}
+
+.recent-work .recent-work-container img {
+  display: block;
+  max-width: 100%;
+  opacity: 1;
+  height: auto;
+  transition: .5s ease;
+}
+.recent-work .recent-work-container:hover img {
+  transform: scale(1.5);
+  opacity: 0.3;
+}
+
+
+.button {
+  display: block;
+  background-color: $color_one;
+  transition: all .5s ease-out;
+  border: 3px solid $color_two;
+  font-weight: bold;
+  color: #EEEEEE;
+  margin: 1em auto;
+  padding: 1.2em;
+  width: 70%;
+  
+  @media screen and (min-width: 680px) {
+    padding: .5em;
+  }
+}
 
 footer a {
   color: $color_light;

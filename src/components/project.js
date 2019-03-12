@@ -6,11 +6,17 @@ class Project extends React.Component {
         
         const {project_title, project_short_description, project_link, project_img } = this.props.project;
         return (
-            <div key={this.props.i}>
-            <h2>{project_title}</h2>
-            <img src={project_img} alt='project work' />
-            <p>{project_short_description}</p>
-            <a href={project_link}> Link </a>
+            <div className="recent-work-container" key={this.props.i}>
+                <img src={project_img} alt='project work' />
+                <div className="text-container">
+                <div className="text">
+                    <h4>{project_title}</h4>
+                    <p className="recent-work-description">{project_short_description}</p>
+                    <a className="button" target="_blank" rel="noopener noreferrer" href={project_link}> View Project </a>
+                </div>
+               </div>
+               
+               
             </div>
         )
     }

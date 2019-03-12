@@ -14,7 +14,6 @@ class Main extends Component {
                 <div id="recentwork" className="recent-work-title">
                     <h3>Recent Work</h3>
                     <hr />
-                    <p>Take a look at my portfolio of all work I have perviously done for clients and friends.</p>
                 </div>
                 <div className="recent-work">
 
@@ -29,8 +28,6 @@ class Main extends Component {
                     </MyContext.Consumer>
                     
                     
-                    
-
                 </div>
 
             </div >
