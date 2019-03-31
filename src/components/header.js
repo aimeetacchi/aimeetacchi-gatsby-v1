@@ -88,13 +88,12 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
 
-    this.isActive = this.isActive.bind(this);
     this.state = {
       active: false,
     }
   }
 
-  isActive() {
+  isActive = () => {
     this.setState({
       active: !this.state.active
     })

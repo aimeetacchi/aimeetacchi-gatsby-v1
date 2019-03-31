@@ -8,7 +8,7 @@ class Projects extends React.Component {
             <Layout>
                 <div className="container">
                     <h2>Projects..</h2>
-                    <p>Projects Here - Page coming soon.</p>
+                    <p>Projects Here - Page coming soon. For now see home</p>
                 </div>
             </Layout>
         )

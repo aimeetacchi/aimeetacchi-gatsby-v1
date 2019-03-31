@@ -15,30 +15,30 @@ const data = [
     },
     {
         "id": 2,
-        "project_title": "Javascript Project Two",
-        "project_short_description": "Project Two, Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "project_description": "Project Two, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque ornare tellus, hendrerit ullamcorper enim semper sit amet. Morbi nec sem feugiat, suscipit nunc sed, efficitur lacus.",
+        "project_title": "Javascript Gallery",
+        "project_short_description": "This project was built in Javascript I took a idea like instagram",
+        "project_description": "This project was built in Javascript I took a idea like instagram but added tabs and the images have data attributes so it knows what ones to pick",
         "project_img": img2,
         "project_link": "https://codepen.io/darkxangel84/pen/ejzpBX",
-        "project_skills": "HTML, CSS (Scss), Javascript and Jquery, Mobile Responsive"
+        "project_skills": "HTML, CSS (Scss), Javascript and, Mobile Responsive"
     },
     {
         "id": 3,
-        "project_title": "Project Three",
-        "project_short_description": "Project Three, Lorem ipsum dolor sit amet, consectetur",
-        "project_description": "Project Three, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque ornare tellus, hendrerit ullamcorper enim semper sit amet. Morbi nec sem feugiat, suscipit nunc sed, efficitur lacus. ",
+        "project_title": "Travel App",
+        "project_short_description": "Travel App built in Javascript to keep track of your trips",
+        "project_description": "Travel App built in Javascript to keep track of your trips, it uses local storage to store your trips you have already added.",
         "project_img": img3,
         "project_link": "https://codepen.io/darkxangel84/pen/ZjxBqB",
-        "project_skills": "HTML, CSS, jQuery"
+        "project_skills": "HTML, Css(Scss), Javascript"
     },
     {
         "id": 4,
-        "project_title": "Project Four",
-        "project_short_description": "Project Four, Lorem ipsum dolor sit amet, consectetur",
-        "project_description": "Project Four, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque ornare tellus, hendrerit ullamcorper enim semper sit amet. Morbi nec sem feugiat, suscipit nunc sed, efficitur lacus. ",
+        "project_title": "Canvas Drawing Board",
+        "project_short_description": "This was built in HTML5 Canvas and Javascript you can create shapes.",
+        "project_description": "This was built in HTML5 Canvas and Javascript you can create shapes.",
         "project_img": img4,
         "project_link": "https://codepen.io/darkxangel84/pen/jYEvpQ",
-        "project_skills": "HTML, CSS, Javascript"
+        "project_skills": "HTML5 Canvas, Css(Scss), Javascript"
     }
 ]
 

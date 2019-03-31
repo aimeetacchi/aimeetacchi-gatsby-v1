@@ -7,7 +7,10 @@ class Contact extends React.Component {
             <Layout>
                 <div className="container">
                     <h2>Contact Me..</h2>
-                    <p>Send us a message Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptas ipsum officia velit fugiat fuga, ratione ullam dolorem voluptatum eligendi vitae nam consectetur! Beatae maxime neque nemo rem autem mod</p>
+                    You can contact me <a href="mailto:aimetacchi@hotmail.co.uk" className="button">Email</a>
+                    <p>I am contactable on my social accounts</p>
+                    <a target="_blank" rel="noopener noreferrer" className="button" href="https://linkedin.com/in/aimeetacchi/"> Linkedin</a>
+                    <a target="_blank" rel="noopener noreferrer" className="button" href="https://twitter.com/aimeetacchi/"> Twitter</a>
                 </div>
             </Layout>
         )

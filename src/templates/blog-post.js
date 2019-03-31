@@ -22,13 +22,13 @@ function BlogPost(props) {
                 url={url}
                 pathname={props.location.pathname}
             />
-            <div class="container">
+            <div className="container">
                 <h1>{title}</h1>
                 <h2>{date}</h2>
                 <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
                 {/* using post variable to get .html from graphql */}
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
-                <Link to="/blog/">Return to Blog</Link>
+                <Link className="button" to="/blog/">Return to Blog</Link>
             </div>
         </Layout>
     )
