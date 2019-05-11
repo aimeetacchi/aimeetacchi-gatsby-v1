@@ -4,7 +4,7 @@ module.exports = {
     description: `I'm Aimee a Front-end developer from Dunstable, Bedfordshire, UK. I create beautiful stylish responsive websites and Javascript apps.`,
     siteName: '> _Aimee Tacchi',
     author: `Aimee Tacchi`,
-    siteUrl: ``,
+    siteUrl: `https://aimeesgatsby.netlify.com`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
