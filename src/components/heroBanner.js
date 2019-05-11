@@ -26,13 +26,13 @@ width: 100%;
 
 @media screen and (min-width: 1024px){
     padding: 4em 2em;
-    width: 80%;
+    width: 60%;
 }
 `
 
 const HeroH1 = styled.h1`
 background: rgba(156,138,165,.5);
-padding: .5em;
+padding: 1em 1em 0.5em;
 border-top-right-radius: 25px;
 border-top-left-radius: 25px;
 color: #112d4e;
@@ -44,7 +44,7 @@ width: 90%;
 
 const HeroH2 = styled.h2`
 background: rgba(156,138,165,.5);
-padding: 0 .5em .5em;
+padding: 0.5em 1em 1em;
 color: #112d4e;
 border-bottom-right-radius: 25px;
 border-bottom-left-radius: 25px;
