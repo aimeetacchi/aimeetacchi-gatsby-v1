@@ -9,34 +9,37 @@ justify-content: space-between;
 align-items: center;
 margin: 0;
 height: 8vh;
-background-color: #3f72af;
+background-color: #0a1128;
+position: relative;
+z-index: 10;
 
-@media (min-width: 1024px){
+@media (min-width: 720px){
     justify-content: flex-start;
+    height: 10vh;
 }
 
 @media (min-width: 680px) {
-    height: 10vh;
     align-items: center;
 }
 `
 const NavStyles = styled.nav`
-    background-color: #3f72af;
+    background-color: #4956ba;
     position: absolute;
-    top: 0;
+    top: 10vh;
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: 1;
+    z-index: 9;
     opacity: .9;
     display: none;
 
-@media  (min-width: 1024px){
+@media(min-width: 720px){
     display: block;
     position: static;
-    width: 30%;
+    width: 20%;
     height: auto;
     opacity: 1;
+    background-color: transparent;
 }
 `
 const LogoH1 = styled.h1`
@@ -61,11 +64,7 @@ const NavItems = styled.ul`
     justify-content: center;
     
     
-    @media (min-width: 680px) { 
-            
-    }
-    
-    @media (min-width: 1024px) {
+    @media (min-width: 720px) {
         display: flex;
         flex-direction: row;
         margin: 0;
@@ -116,17 +115,12 @@ class Header extends React.Component {
         <NavStyles className={this.state.active ? 'toogleNav' : null} >
           <NavItems>
             <NavLi>
-              <Link to='/about' className='nav-link' style={{ textDecoration: 'none' }}>About</Link>
-            </NavLi>
-            <NavLi>
               <Link to='/blog' className='nav-link' style={{ textDecoration: 'none' }}>Blog</Link>
             </NavLi>
             <NavLi>
               <Link to='/projects' className='nav-link' style={{ textDecoration: 'none' }}>Projects</Link>
             </NavLi>
-            <NavLi>
-              <Link to='/contact' className='nav-link' style={{ textDecoration: 'none' }}>Contact</Link>
-            </NavLi>
+
           </NavItems>
         </NavStyles>
       </HeaderStyles>

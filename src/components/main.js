@@ -1,19 +1,22 @@
 import React, { Component } from 'react'
 import Project from './project'
+import About from './about'
+import Contact from './contact'
+import { Link } from 'gatsby';
 import MyContext from './MyContext'
 
 class Main extends Component {
 
     render() {
         return (
-            <div className="container">
-                <h2>{this.props.headingTitle}</h2>
-                <p>I'm a Front-End Web Developer, based in Dunstable, Bedfordshire</p>
-
-
-                <div id="recentwork" className="recent-work-title">
+            <React.Fragment>
+                <div className="container">
+                    <About id="about" headingTitle="I’m passionate about clean looking websites that work really well on all devices."/>
+                </div>
+                <div className="recent-work-title">
                     <h3>Recent Work</h3>
-                    <hr />
+                    <p>This is some of my recent work. More coming soon..</p>
+                    {/* <Link to='/about' className='nav-link' style={{ textDecoration: 'none' }}> Read More..</Link> */}
                 </div>
                 <div className="recent-work">
 
@@ -27,10 +30,11 @@ class Main extends Component {
                     )}
                     </MyContext.Consumer>
                     
-                    
                 </div>
-
-            </div >
+                <div className="container">
+                    <Contact/>
+                </div>
+            </React.Fragment>
         )
     }
 }

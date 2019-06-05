@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
-
 import MyProvider from './MyProvider'
 
 import styled from 'styled-components'
 import Header from '../components/header'
 import './layout.scss'
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab, faLinkedin, faTwitter, faCodepen, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fab, faLinkedin, faTwitter, faCodepen, faGithub, faInstagram)
 
 
 // Footer Styles ===
