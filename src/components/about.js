@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import profilepic from '../images/profilepic.png'
+import profilepic from '../data/images/profilepic.png'
 import { Link } from 'gatsby'
 
 class About extends Component {

@@ -163,20 +163,10 @@ ul {
   font-weight: 700;
 }
 
-.recent-work-title {
-  text-align:center;
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
-
-  @media(min-width: $tab){
-    text-align: right;   
-  }
-}
-
 .recent-work {
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
+  // border:1px solid red;
 
   @media (min-width: $tab) {
       display: flex;
@@ -186,21 +176,33 @@ ul {
       padding: .5em 0;
       max-width: 1200px;
       margin: 0 auto;
+  } 
+
+  .recent-work-title {
+    text-align:center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  
+    @media(min-width: $tab){
+      text-align: right;   
+    }
+  }
+}
+
+.recent-work-container {
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  // border: 1px solid green;
+
+  @media (min-width: $tab) {
+    flex-basis: 50%;
   }
 
-    .recent-work-container {
-      box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
-      position: relative;
-      overflow: hidden;
-
-      @media (min-width: $tab) {
-        flex-basis: 50%;
-      }
-
-      @media(min-width: $desktop) {
-          flex-basis: 33.3%;
-      }
-    }
+  @media(min-width: $desktop) {
+      flex-basis: 33.3%;
+  }
 }
 
 .text-container {

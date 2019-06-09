@@ -1,22 +1,19 @@
 import React from 'react'
-
+import { Link } from 'gatsby';
 
 class Project extends React.Component {
     render() {
-        
-        const {project_title, project_short_description, project_link, project_img } = this.props.project;
+        const {title, description, link, img } = this.props.project;
         return (
             <div className="recent-work-container" key={this.props.i}>
-                <img src={project_img} alt='project work' />
-                <div className="text-container">
-                <div className="text">
-                    <h4>{project_title}</h4>
-                    <p className="recent-work-description">{project_short_description}</p>
-                    <a className="button" target="_blank" rel="noopener noreferrer" href={project_link}> View Project </a>
-                </div>
-               </div>
-               
-               
+                <h4>{title}</h4>
+                <a target="_blank" rel="noopener noreferrer" href={link}>
+                    <img src={img.childImageSharp.fluid.src} alt={title}/>
+                </a>
+                <p className="recent-work-description">{description}</p>
+                
+                <a className="button" target="_blank" rel="noopener noreferrer" href={link}>View Live Project</a>
+                <Link to="/projects">Back to all projects</Link>
             </div>
         )
     }

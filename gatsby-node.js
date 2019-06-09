@@ -3,15 +3,11 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
-const path = require("path")
 const { createFilePath, createFileNode } = require(`gatsby-source-filesystem`);
 
-exports.createPages = ({ actions, graphql }) => {
-    const { createPage } = actions
-
-    return new Promise((resolve, reject) => {
-
-        resolve(graphql(`
+exports.createPages = async({ actions, graphql, reporter }) => {
+  
+       const blogresults = await graphql(`
             {
               allMarkdownRemark(
                   sort: { order: DESC, fields: [frontmatter___date] }
@@ -29,29 +25,51 @@ exports.createPages = ({ actions, graphql }) => {
                   }
               }
             }
-        `).then(result => {
-            if (result.errors) {
-                const errors = result.errrors;
+        `)
+            if (blogresults.errors) {
+                const errors = result1.errrors;
                 console.log(errors)
                 return reject(errors)
             }
 
-            const blogTemplate = path.resolve('./src/templates/blog-post.js');
-
-            result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-                    createPage({
+            blogresults.data.allMarkdownRemark.edges.forEach(({ node }) => {
+                    actions.createPage({
                         path: node.fields.slug,
-                        component: blogTemplate,
+                        component: require.resolve('./src/templates/blog-post.js'),
                         context: {
                             slug: node.fields.slug,
                         }, // additional data can be passed via context
                     })
-
                 })
-                return
-            })
-        )
-    })
+
+    const projectsresults = await graphql(`
+            {
+              allProjectsdataJson {
+                  edges  {
+                      node {
+                         slug 
+                      }
+                  }
+              }
+            }
+        `);
+
+        if(projectsresults.error) {
+            reporter.panic('There was a problem building your projects!');
+            return;
+        }
+
+        const projects = projectsresults.data.allProjectsdataJson.edges;
+
+        projects.forEach( ({node}) => {
+            const slug = node.slug;
+
+            actions.createPage({
+                path:  `/${slug}/`,
+                component: require.resolve('./src/templates/project.js'),
+                context: { slug }
+            });
+        });
 }
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
