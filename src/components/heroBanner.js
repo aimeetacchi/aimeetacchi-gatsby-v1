@@ -74,7 +74,7 @@ class HeroBanner extends Component {
             <React.Fragment>
             <HeroContainer>
                 <HeroContent>
-                    <HeroH1>I'm {this.props.name}, a Front-end Web Developer</HeroH1>
+                    <HeroH1>Hello I'm {this.props.name}, a Front-end Web Developer</HeroH1>
                     <HeroH2>Building Responsive Websites and Applications</HeroH2>
                 </HeroContent>
             </HeroContainer>

@@ -29,11 +29,11 @@ const Blog = () => (
       <Layout>
         <div className="container">
         <SEO title="Page two" />
-        <h1>Blog</h1>
+        <h2>Blog</h2>
         {data.allMarkdownRemark.edges.map(({ node }, i) => (
-          <Link to={node.fields.slug} className="link">
+          <Link key={i} to={node.fields.slug} className="link">
             <div className="post-list">
-              <h2>{node.frontmatter.title}</h2>
+              <h3>{node.frontmatter.title}</h3>
               <span>{node.frontmatter.date}</span>
               <p>{node.excerpt}</p>
             </div>

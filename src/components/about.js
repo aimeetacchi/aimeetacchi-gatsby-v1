@@ -17,7 +17,7 @@ class About extends Component {
                       
                         <h3>{this.props.headingTitle}</h3>
                     
-                        <p>I'm Aimee a passionate self taught Front-end Web Developer based in Dunstable, Bedfordshire. I primarily focus on writing clean, elegant, &amp; efficient code.</p>
+                        <p>I'm Aimee a passionate self taught Front-end Web Developer and crazy cat girl based in Dunstable, Bedfordshire. I primarily focus on writing clean, elegant, &amp; efficient code.</p>
                         <p>I have skills in HTML, CSS, SCSS, JavaScript, React &amp; Gatsby.</p>
                        
                        <Link to='/about' className='nav-link' style={{ textDecoration: 'none' }}> Read More..</Link>

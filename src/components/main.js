@@ -50,9 +50,9 @@ class Main extends Component {
                 
                 <div id="recent-work" className="recent-work">
                     <div className="recent-work-title">
-                        <h3>Recent Work</h3>
-                        <p>This is some of my recent work. More coming soon..</p>
-                        <Link to='/projects' className='nav-link' style={{ textDecoration: 'none' }}> Read More..</Link>
+                        <h3>My Projects</h3>
+                        <p>My Javascript and React projects have all be built with clean code and made so they are all responsive to different devices.</p>
+                        <Link to='/projects' style={{ textDecoration: 'none' }}> View Projects</Link>
                     </div>
                     {/* PROJECTS PAGE  */}
                    {/* <Projects/> */}

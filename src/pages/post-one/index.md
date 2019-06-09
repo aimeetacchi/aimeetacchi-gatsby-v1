@@ -1,5 +1,5 @@
 ---
-title: "Where do you begin in development?"
+title: "Where do you begin?"
 description: A blog post about becoming a web developer and what paths you can take.
 date: '31-03-2019'
 image: image1.jpg
@@ -7,7 +7,7 @@ image: image1.jpg
 
 #Where do you begin?
 
-So many languages to learn, so many paths to take so where does one brand new to all this begin? I’m Aimee a Front-End Developer, I started my web developer job in 2016 as a junior web developer. I only really knew HTML, CSS and a tiny bit of jQuery. As a junior there is so much to learn and it can all be a bit overwhelming, but don’t give up, keep motivated and keep going. I’m going to show you some paths you can take.
+So many languages to learn, so many paths to take so where does one brand new to all this begin? I’m Aimee a Front-End Developer, I started my first web developer job in 2016 as a junior web developer. I only really knew HTML, CSS and a tiny bit of jQuery. As a junior there is so much to learn and it can all be a bit overwhelming, but don’t give up, keep motivated and keep going. I’m going to show you some paths you can take.
 
 ###  Front-End Developer
 You can become a Front-End Developer, Back-End Developer or a Full Stack Developer These are just three roles.

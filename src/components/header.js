@@ -32,6 +32,7 @@ const NavStyles = styled.nav`
     z-index: 9;
     opacity: .9;
     display: none;
+    
 
 @media(min-width: 720px){
     display: block;
@@ -39,6 +40,7 @@ const NavStyles = styled.nav`
     width: 20%;
     height: auto;
     opacity: 1;
+    margin-left: 25px;
     background-color: transparent;
 }
 `
@@ -79,7 +81,15 @@ const NavItems = styled.ul`
 const NavLi = styled.li`
 width: 100%;
 text-align: center;
-margin: 0;
+margin: 0 5px;
+-webkit-transition: all .5s ease-out;
+transition: all .5s ease-out;
+padding: 10px 0;
+
+&:hover {
+  background-color: #414073;
+  transform: scale(1.1);
+}
 `
 
 
