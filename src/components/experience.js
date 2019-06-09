@@ -31,12 +31,12 @@ function Experience() {
             <p><strong>Junior Front-End Web Developer</strong> | London | Feb 2017 - May 2017</p>
 
             <ul className="experience-list">
-                <li>Developed, enhanced and maintained company’s websites using HTML, Sass, and Javascript with some frameworks such as jQuery and React.
+                <li>Developed, enhanced and maintained company’s websites using HTML, Sass, and Javascript with libaries such as jQuery and React.
                 </li>
                 <li>Fixed front end bugs (HTML, CSS)</li>
                 <li>Ran some code meetings at lunchtime for people who were interested in learning.</li>
             </ul>
-            <p>Workflow tools included: HTML, CSS, Scss Bootstrap, jQuery, React(JSX), Glup and Git</p>
+            <p>Workflow tools included: HTML, CSS, Scss Bootstrap, jQuery, React, Gulp and Git</p>
 
             <hr />
 
