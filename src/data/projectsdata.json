@@ -1,17 +1,37 @@
 [
     {
         "id": "1",
-        "slug": "project-1",
+        "slug": "react-calculator",
+        "title": "React Calculator",
+        "short_description": "A Create React app project, a simple calculator",
+        "description": "A Create React app project, a simple calculator at lets you add, multiple, subtract and divide with afew other features.",
+        "img": "./images/reactCalculator.jpg",
+        "link": "https://aimees-cal.netlify.com/",
+        "skills": "ReactJS, JSX, SCSS,"
+    },
+    {
+        "id": "2",
+        "slug": "react-to-do-list",
+        "title": "React To-Do list",
+        "short_description": "A Create React app project, a To-Do list..",
+        "description": "A Create React app project, a To-Do list application like a CRUD with no backend, saves to local storage, lets you create, edit, update and delete",
+        "img": "./images/react-to-do.jpg",
+        "link": "https://aimee-todo.netlify.com/",
+        "skills": "ReactJS, JSX, SCSS"
+    },
+    {
+        "id": "3",
+        "slug": "weather-api",
         "title": "Weather API Project",
         "short_description": "Connecting to a weather API with the users geolocation and getting the weather and area for them..",
         "description": "Connecting to a weather API with the users geolocation and getting the weather and area for them with the latitude and longitude adding it on to the end of the API. This is built using HTML, SCSS and Jquery, using Ajax to connect to the API.",
         "img": "./images/weatherAPI.jpg",
         "link": "https://codepen.io/aimeetacchi/full/OOVBrj",
-        "skills": "HTML, CSS (Scss), Jquery, Ajax Mobile Responsive, Git, Gulp"
+        "skills": "HTML, CSS (Scss), Jquery, Ajax Mobile Responsive, Gulp"
     },
     {
-        "id": "2",
-        "slug": "project-2",
+        "id": "4",
+        "slug": "js-gallery",
         "title": "Javascript Gallery",
         "short_description": "This project was built in Javascript I took a idea like instagram..",
         "description": "This project was built in Javascript I took a idea like instagram but added tabs and the images have data attributes so it knows what ones to pick",
@@ -20,8 +40,8 @@
         "skills": "HTML, CSS (Scss), Javascript and, Mobile Responsive"
     },
     {
-        "id": "3",
-        "slug": "project-3",
+        "id": "5",
+        "slug": "travel-app",
         "title": "Travel App",
         "short_description": "Travel App built in Javascript to keep track of your trips...",
         "description": "Travel App built in Javascript to keep track of your trips, it uses local storage to store your trips you have already added.",
@@ -30,8 +50,8 @@
         "skills": "HTML, Css(Scss), Javascript"
     },
     {
-        "id": "4",
-        "slug": "project-4",
+        "id": "6",
+        "slug": "canvas-drawing-board",
         "title": "Canvas Drawing Board",
         "short_description": "This was built in HTML5 Canvas and Javascript you can create shapes.",
         "description": "This was built in HTML5 Canvas and Javascript you can create shapes of different sizes and colors",
