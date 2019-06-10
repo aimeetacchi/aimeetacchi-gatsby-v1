@@ -21,6 +21,16 @@
     },
     {
         "id": "3",
+        "slug": "react-random-quote-machine",
+        "title": "React Random Quote Machine",
+        "short_description": "A Create React app project, Random Quote App..",
+        "description": "A Create React app project, Random quote application it selects a random quote and lets your share it to Twitter",
+        "img": "./images/react-random-quote.jpg",
+        "link": "https://aimeesquotemachine.netlify.com/",
+        "skills": "ReactJS, JSX, SCSS"
+    },
+    {
+        "id": "4",
         "slug": "weather-api",
         "title": "Weather API Project",
         "short_description": "Connecting to a weather API with the users geolocation and getting the weather and area for them..",
@@ -30,7 +40,7 @@
         "skills": "HTML, CSS (Scss), Jquery, Ajax Mobile Responsive, Gulp"
     },
     {
-        "id": "4",
+        "id": "5",
         "slug": "js-gallery",
         "title": "Javascript Gallery",
         "short_description": "This project was built in Javascript I took a idea like instagram..",
@@ -40,7 +50,7 @@
         "skills": "HTML, CSS (Scss), Javascript and, Mobile Responsive"
     },
     {
-        "id": "5",
+        "id": "6",
         "slug": "travel-app",
         "title": "Travel App",
         "short_description": "Travel App built in Javascript to keep track of your trips...",
@@ -50,7 +60,7 @@
         "skills": "HTML, Css(Scss), Javascript"
     },
     {
-        "id": "6",
+        "id": "7",
         "slug": "canvas-drawing-board",
         "title": "Canvas Drawing Board",
         "short_description": "This was built in HTML5 Canvas and Javascript you can create shapes.",
@@ -58,5 +68,25 @@
         "img": "./images/canvas.jpg",
         "link": "https://codepen.io/aimeetacchi/full/jYEvpQ",
         "skills": "HTML5 Canvas, Css(Scss), Javascript"
+    },
+    {
+        "id": "8",
+        "slug": "wiki-search-app",
+        "title": "Wiki-Search-Application",
+        "short_description": "FreeCodeCamp Project to use the Wiki API to show a search result",
+        "description": "FreeCodeCamp Project, this was built by using an API to connect to Wikipedia you can do a search and it will display the results depending on the search",
+        "img": "./images/wiki-search.jpg",
+        "link": "https://codepen.io/aimeetacchi/full/ZaJeRp",
+        "skills": "HTML5, Css(Scss), jQuery, Ajax, wikiAPI"
+    },
+    {
+        "id": "9",
+        "slug": "youtube-api-app",
+        "title": "YouTube-API-Application",
+        "short_description": "Using the Youtube API to get a playlist of a user",
+        "description": "This was built by using the Youtube API to get a users playlist and give you the videos",
+        "img": "./images/youtube-api.jpg",
+        "link": "https://codepen.io/aimeetacchi/full/jzNmqo",
+        "skills": "HTML5, Css(Scss), jQuery, Ajax, YoutubeAPI"
     }
 ]
