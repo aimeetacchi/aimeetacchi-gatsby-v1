@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
-
 import Particles from 'react-particles-js'
+
+import styled, { keyframes } from 'styled-components';
+import { fadeInLeft, fadeIn } from 'react-animations';
+
+const fadeinleftAnimation = keyframes`${fadeInLeft}`;
+const fadeinAnimation = keyframes`${fadeIn}`;
 
 
 const HeroContainer = styled.div`
@@ -32,6 +36,7 @@ z-index: 5;
 `
 
 const HeroH1 = styled.h1`
+animation: 2s ${fadeinleftAnimation};
 padding-bottom: 0.5em;
 border-top-right-radius: 25px;
 border-top-left-radius: 25px;
@@ -43,6 +48,7 @@ width: 90%;
 `
 
 const HeroH2 = styled.h2`
+animation: 6s ${fadeinAnimation};
 color: #f9f7f7;
 border-bottom-right-radius: 25px;
 border-bottom-left-radius: 25px;
