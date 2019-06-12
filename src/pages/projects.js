@@ -17,6 +17,7 @@ const Projects = () => (
                     slug
                     title
                     skills
+                    recent_work
                     short_description
                     img {
                       childImageSharp {

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Experience() {
+const Experience = () => {
     return (
         <section className="experience-section">
             <h2>My Experience</h2>

@@ -2,9 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHtml5, faCss3, faJs, faWordpress } from '@fortawesome/free-brands-svg-icons';
 
-
-// faHtml5, faCss3, faJs, fa 
-function Skills() {
+const Skills = () => {
     return (
         <section className="skills-section">
 

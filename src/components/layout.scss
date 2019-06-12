@@ -23,6 +23,7 @@ a {
 }
 
 body {
+  overflow:hidden;
   font-family: $font_primary;
   font-weight: normal;
   word-wrap: break-word;
@@ -189,18 +190,7 @@ ul {
       margin: 0;
     }
 
-    img {
-      border:5px solid $color5;
-      display: block;
-      border-radius: 100%;
-      width: 300px;
-      margin: 0 auto;
-      
-      @media screen and (min-width: $tab){
-        width: 100%;
-      }
-      
-    }
+
   }
   .about__content {
       @media screen and (min-width: $tab){
@@ -308,12 +298,12 @@ ul {
 
 
 #recent-work {
-  background: #4956ba; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #4956ba 0%, #414073 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #4956ba 0%,#414073 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #4956ba 0%,#414073 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4956ba', endColorstr='#414073',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     padding: 10em 0;
+
+    .button {
+      width: 200px;
+      text-align: center;
+    }
 }
 .recent-work {
   border-radius: 12px;
@@ -331,13 +321,17 @@ ul {
   .recent-work-title {
     text-align:center;
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   
     @media(min-width: $tab){
       text-align: right;   
     }
   }
+}
+
+.recent__work_desc {
+  padding: 1em 0;
 }
 
 .recent-work-container {
@@ -366,8 +360,7 @@ ul {
   background-color: rgba(73, 86, 186, 0.7);
   display: flex;
   align-items: center;
-    
-
+  
   .text {
     width: 80%;
     margin: 0 auto;
@@ -375,7 +368,7 @@ ul {
     color: $color_light;
     padding: 1em;
     font-size: 14px;
-
+  
     @media screen and (min-width: $tab) {
       padding: .5em;
       font-size: 16px;
@@ -385,6 +378,7 @@ ul {
     }
   }
 }
+
 
 .recent-work .recent-work-container:hover .text-container {
   opacity: 1;

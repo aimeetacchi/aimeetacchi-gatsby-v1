@@ -1,11 +1,11 @@
 // src/pages/about.jsx
-import React, { Component } from 'react'
+import React from 'react'
 import Layout from '../components/layout'
 import Skills from '../components/skills'
 import Experience from '../components/experience'
 
-class About extends Component {
-    render() {
+const About = () =>  {
+
         return (
             <Layout>
                 <div className="container">
@@ -15,7 +15,6 @@ class About extends Component {
                 </div >
             </Layout>
         )
-    }
 }
 
 export default About;

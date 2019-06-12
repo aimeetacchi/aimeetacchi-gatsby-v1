@@ -1,21 +1,42 @@
-import React, { Component } from 'react'
+import React  from 'react'
 import profilepic from '../data/images/profilepic.png'
 import { Link } from 'gatsby'
+import styled from 'styled-components';
 
-class About extends Component {
-    render() {
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
+
+const AboutImg = styled.img`
+
+    border:5px solid $color5;
+    display: block;
+    border-radius: 100%;
+    width: 300px;
+    margin: 0 auto;
+        
+    @media screen and (min-width: $tab){
+          width: 100%;
+    }
+`
+
+const About = (props) => {
+    
         return (
             <div id="about">
-                <h3>About Aimee</h3>
+                 <ScrollAnimation animateIn='bounceInLeft'>
+                 <h3>About Aimee</h3>
+                 </ScrollAnimation>
                 <section className="about_container">
 
                     <div className="about__image">
-                        <img src={profilepic} alt="about aimee" />
+                        <AboutImg src={profilepic} alt="about aimee" />
                     </div>
                 
                     <div className="about__content"> 
                       
-                        <h3>{this.props.headingTitle}</h3>
+                    <ScrollAnimation animateIn="fadeIn">
+                    <h3>{props.headingTitle}</h3>
+                    </ScrollAnimation>
                     
                         <p>I'm Aimee a passionate self taught Front-end Web Developer and crazy cat girl based in Dunstable, Bedfordshire. I primarily focus on writing clean, elegant, &amp; efficient code.</p>
                         <p>I have skills in HTML, CSS, SCSS, JavaScript, React &amp; Gatsby.</p>
@@ -25,7 +46,6 @@ class About extends Component {
                 </section>
             </div>
         )
-    }
 }
 
 export default About;

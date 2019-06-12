@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby';
 
-class Project extends React.Component {
-    render() {
-        const {title, description, link, img } = this.props.project;
+const Project = (props) => {
+    
+        const {title, description, link, img } = props.project;
         return (
-            <div className="recent-work-container" key={this.props.i}>
+            <div className="recent-work-container" key={props.i}>
                 <h4>{title}</h4>
                 <a target="_blank" rel="noopener noreferrer" href={link}>
                     <img src={img.childImageSharp.fluid.src} alt={title}/>
@@ -16,6 +16,5 @@ class Project extends React.Component {
                 <Link to="/projects">Back to all projects</Link>
             </div>
         )
-    }
 }
 export default Project;

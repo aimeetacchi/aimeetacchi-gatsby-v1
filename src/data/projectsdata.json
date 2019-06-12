@@ -7,7 +7,8 @@
         "description": "A Create React app project, a simple calculator at lets you add, multiple, subtract and divide with afew other features.",
         "img": "./images/reactCalculator.jpg",
         "link": "https://aimees-cal.netlify.com/",
-        "skills": "ReactJS, JSX, SCSS,"
+        "skills": "ReactJS, JSX, SCSS,",
+        "recent_work": true
     },
     {
         "id": "2",
@@ -17,7 +18,8 @@
         "description": "A Create React app project, a To-Do list application like a CRUD with no backend, saves to local storage, lets you create, edit, update and delete",
         "img": "./images/react-to-do.jpg",
         "link": "https://aimee-todo.netlify.com/",
-        "skills": "ReactJS, JSX, SCSS"
+        "skills": "ReactJS, JSX, SCSS",
+        "recent_work": true
     },
     {
         "id": "3",
@@ -27,7 +29,8 @@
         "description": "A Create React app project, Random quote application it selects a random quote and lets your share it to Twitter",
         "img": "./images/react-random-quote.jpg",
         "link": "https://aimeesquotemachine.netlify.com/",
-        "skills": "ReactJS, JSX, SCSS"
+        "skills": "ReactJS, JSX, SCSS",
+        "recent_work": true
     },
     {
         "id": "4",
@@ -37,7 +40,8 @@
         "description": "Connecting to a weather API with the users geolocation and getting the weather and area for them with the latitude and longitude adding it on to the end of the API. This is built using HTML, SCSS and Jquery, using Ajax to connect to the API.",
         "img": "./images/weatherAPI.jpg",
         "link": "https://codepen.io/aimeetacchi/full/OOVBrj",
-        "skills": "HTML, CSS (Scss), Jquery, Ajax Mobile Responsive, Gulp"
+        "skills": "HTML, CSS (Scss), Jquery, Ajax Mobile Responsive, Gulp",
+        "recent_work": false
     },
     {
         "id": "5",
@@ -47,7 +51,8 @@
         "description": "This project was built in Javascript I took a idea like instagram but added tabs and the images have data attributes so it knows what ones to pick",
         "img": "./images/photofilter.jpg",
         "link": "https://codepen.io/aimeetacchi/full/ejzpBX",
-        "skills": "HTML, CSS (Scss), Javascript and, Mobile Responsive"
+        "skills": "HTML, CSS (Scss), Javascript and, Mobile Responsive",
+        "recent_work": false
     },
     {
         "id": "6",
@@ -57,7 +62,8 @@
         "description": "Travel App built in Javascript to keep track of your trips, it uses local storage to store your trips you have already added.",
         "img": "./images/places-app.jpg",
         "link": "https://codepen.io/aimeetacchi/full/ZjxBqB",
-        "skills": "HTML, Css(Scss), Javascript"
+        "skills": "HTML, Css(Scss), Javascript",
+        "recent_work": false
     },
     {
         "id": "7",
@@ -67,7 +73,8 @@
         "description": "This was built in HTML5 Canvas and Javascript you can create shapes of different sizes and colors",
         "img": "./images/canvas.jpg",
         "link": "https://codepen.io/aimeetacchi/full/jYEvpQ",
-        "skills": "HTML5 Canvas, Css(Scss), Javascript"
+        "skills": "HTML5 Canvas, Css(Scss), Javascript",
+        "recent_work": false
     },
     {
         "id": "8",
@@ -77,7 +84,8 @@
         "description": "FreeCodeCamp Project, this was built by using an API to connect to Wikipedia you can do a search and it will display the results depending on the search",
         "img": "./images/wiki-search.jpg",
         "link": "https://codepen.io/aimeetacchi/full/ZaJeRp",
-        "skills": "HTML5, Css(Scss), jQuery, Ajax, wikiAPI"
+        "skills": "HTML5, Css(Scss), jQuery, Ajax, wikiAPI",
+        "recent_work": false
     },
     {
         "id": "9",
@@ -87,6 +95,7 @@
         "description": "This was built by using the Youtube API to get a users playlist and give you the videos",
         "img": "./images/youtube-api.jpg",
         "link": "https://codepen.io/aimeetacchi/full/jzNmqo",
-        "skills": "HTML5, Css(Scss), jQuery, Ajax, YoutubeAPI"
+        "skills": "HTML5, Css(Scss), jQuery, Ajax, YoutubeAPI",
+        "recent_work": false
     }
 ]

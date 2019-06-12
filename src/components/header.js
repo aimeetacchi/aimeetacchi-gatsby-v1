@@ -111,9 +111,10 @@ class Header extends React.Component {
   render() {
     return (
       <HeaderStyles>
-        <div className="logo">
+       
+       <div className="logo">
           <Link to='/' style={{ textDecoration: 'none' }}>
-            <LogoH1>{this.props.siteName}</LogoH1>
+          <LogoH1>{this.props.siteName}</LogoH1>
           </Link>
         </div>
 
