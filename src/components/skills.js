@@ -3,23 +3,72 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHtml5, faCss3, faJs, faWordpress } from '@fortawesome/free-brands-svg-icons';
 
 const Skills = () => {
+
+    const skillsLang = [
+        {
+            name: 'HTML5',
+            level: '90%',
+            fontawesome: faHtml5,
+        },
+        {
+            name: 'Responsive CSS/Scss',
+            level: '85%',
+            fontawesome: faCss3,
+        },
+        {
+            name: 'Javascript',
+            level: '75%',
+            fontawesome: faJs
+        },
+        {
+            name: 'Wordpress',
+            level: '65%',
+            fontawesome: faWordpress
+        },
+    ]
+    const skillsFandL = [
+        {
+            name: 'Frameworks & Libraries',
+            level: 'Frameworks & Libraries',
+            fontawesome: ''
+        },
+        {
+            name: 'jQuery',
+            level: '60%',
+            fontawesome: '',
+        },
+        {
+            name: 'React',
+            level: '40%',
+            fontawesome: ''
+        },
+        {
+            name: 'Angular',
+            level: '30%',
+            fontawesome: ''
+        },
+       
+    ]
+
     return (
         <section className="skills-section">
 
             <div className="skill__content"> 
                 <h3>My Skills</h3>
                     <ul className="skills-list">
-                        <li><FontAwesomeIcon icon={faHtml5}> </FontAwesomeIcon> HTML5 </li>
-                        <li><FontAwesomeIcon icon={faCss3}> </FontAwesomeIcon> Responsive CSS/Scss</li>
-                        <li><FontAwesomeIcon icon={faJs}> </FontAwesomeIcon> Javascript</li>
-                        <li><FontAwesomeIcon icon={faWordpress}> </FontAwesomeIcon> Wordpress</li>
+
+                    {skillsLang.map(skill => <li>
+                            <FontAwesomeIcon icon={skill.fontawesome}> </FontAwesomeIcon> {skill.name}  <div className="skillpoints">{skill.level}</div>
+                        </li>)}
+
                     </ul>
+
                     <ul className="skills-list">
-                        <li className="sub"><strong>Frameworks & Libraries</strong></li>
-                        <li>jQuery</li>
-                        <li>React</li>
-                        <li>Angular V2</li>
+                     {skillsFandL.map(skill => <li>
+                             {skill.name}  <div className="skillpoints">{skill.level}</div>
+                        </li>)}
                     </ul>
+
                     <ul className="skills-list">
                         <li className="sub"><strong>Tools</strong></li>
                         <li>Git</li>

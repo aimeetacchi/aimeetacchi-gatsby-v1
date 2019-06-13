@@ -74,16 +74,17 @@ const HeroBanner = (props) => {
             <React.Fragment>
             <HeroContainer>
                 <HeroContent>
-                
-                    <ScrollAnimation  duration='2' animateIn="fadeIn">
                         <HeroH1>
-                        Hello I'm {props.name}, a Front-end Web Developer
+                            <ScrollAnimation animateIn="fadeIn">
+                                Hello I'm {props.name}, a Front-end Web Developer
+                            </ScrollAnimation>
                         </HeroH1>
-                    </ScrollAnimation>
-                    
-                    <ScrollAnimation  duration='3' animateIn="bounceInLeft"> 
-                        <HeroH2>Building Responsive Websites and Applications</HeroH2> 
-                    </ScrollAnimation>
+             
+                        <HeroH2>
+                            <ScrollAnimation animateIn="bounceInLeft">
+                                Building Responsive Websites and Applications
+                            </ScrollAnimation>
+                        </HeroH2> 
                 </HeroContent>
             </HeroContainer>
             <Particles style={particlesStyles} params={particlesOptions} />

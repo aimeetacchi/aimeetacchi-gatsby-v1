@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby';
 import "animate.css/animate.min.css";
-import ScrollAnimation from 'react-animate-on-scroll';
 
 class ProjectPreview extends React.Component {
     render() {
