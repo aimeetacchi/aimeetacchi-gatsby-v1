@@ -418,6 +418,21 @@ ul {
 }
 
 
+// Single Project Page
+
+.project-container {
+  text-align: center;
+
+  .project-content {
+    padding: 3em;
+    
+    @media(min-width: $desktop) {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+}
+
 .button {
   display: block;
   transition: all .5s ease-out;

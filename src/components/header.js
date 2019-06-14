@@ -25,10 +25,10 @@ z-index: 10;
 const NavStyles = styled.nav`
     background-color: #4956ba;
     position: absolute;
-    top: 10vh;
+    top: 8vh;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 400vh;
     z-index: 9;
     opacity: .9;
     display: none;
@@ -125,6 +125,9 @@ class Header extends React.Component {
         </div>
         <NavStyles className={this.state.active ? 'toogleNav' : null} >
           <NavItems>
+            <NavLi> 
+              <Link to='/about' className='nav-link' style={{ textDecoration: 'none' }}>About</Link>
+            </NavLi>
             <NavLi>
               <Link to='/blog' className='nav-link' style={{ textDecoration: 'none' }}>Blog</Link>
             </NavLi>

@@ -12,17 +12,17 @@ const Skills = () => {
         },
         {
             name: 'Responsive CSS/Scss',
-            level: '85%',
+            level: '80%',
             fontawesome: faCss3,
         },
         {
             name: 'Javascript',
-            level: '75%',
+            level: '70%',
             fontawesome: faJs
         },
         {
             name: 'Wordpress',
-            level: '65%',
+            level: '60%',
             fontawesome: faWordpress
         },
     ]
@@ -57,14 +57,14 @@ const Skills = () => {
                 <h3>My Skills</h3>
                     <ul className="skills-list">
 
-                    {skillsLang.map(skill => <li>
+                    {skillsLang.map((skill, i) => <li key={i}>
                             <FontAwesomeIcon icon={skill.fontawesome}> </FontAwesomeIcon> {skill.name}  <div className="skillpoints">{skill.level}</div>
                         </li>)}
 
                     </ul>
 
                     <ul className="skills-list">
-                     {skillsFandL.map(skill => <li>
+                     {skillsFandL.map((skill, i) => <li key={i}>
                              {skill.name}  <div className="skillpoints">{skill.level}</div>
                         </li>)}
                     </ul>

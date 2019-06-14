@@ -75,13 +75,16 @@ const HeroBanner = (props) => {
             <HeroContainer>
                 <HeroContent>
                         <HeroH1>
-                            <ScrollAnimation animateIn="fadeIn">
+                            <ScrollAnimation
+                            delay={500}
+                            // initiallyVisible={true}
+                            animateIn="fadeInRight">
                                 Hello I'm {props.name}, a Front-end Web Developer
                             </ScrollAnimation>
                         </HeroH1>
              
                         <HeroH2>
-                            <ScrollAnimation animateIn="bounceInLeft">
+                            <ScrollAnimation animateIn="bounceInLeft" delay={1000}>
                                 Building Responsive Websites and Applications
                             </ScrollAnimation>
                         </HeroH2> 

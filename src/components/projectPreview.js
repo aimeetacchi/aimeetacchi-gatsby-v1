@@ -1,16 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby';
-import "animate.css/animate.min.css";
 
-class ProjectPreview extends React.Component {
-    render() {
-        
-        const {title, short_description, slug, img } = this.props.project.node;
-
-        // console.log(this.props.project);
+const ProjectPreview = (props) => {
+        const {title, short_description, slug, img } = props.project.node;
+        // console.log(props.project);
         return (
-            
-            <div className="recent-work-container" key={this.props.i}>
+            <div className="recent-work-container" key={props.i}>
                <img src={img.childImageSharp.fluid.src} alt={title}/>
                 <div className="text-container">
                 <div className="text">
@@ -19,10 +14,7 @@ class ProjectPreview extends React.Component {
                     <Link className="button" to={`/${slug}/`}>View Project</Link>
                 </div>
                </div>
-               
-               
             </div>
         )
-    }
 }
 export default ProjectPreview;

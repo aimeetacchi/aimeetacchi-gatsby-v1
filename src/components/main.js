@@ -89,7 +89,7 @@ const Main = () => (
 
                              {
                                 data.allProjectsdataJson.edges.map((project, i) => {
-                                console.log(project)
+                                // console.log(project)
                                 return (project.node.recent_work) ?
                                 (<ProjectPreview key={i} project={project}/>) : null
                                 
