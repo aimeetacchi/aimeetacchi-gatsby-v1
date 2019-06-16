@@ -10,7 +10,7 @@ const contact = (props) => {
                   <ScrollAnimation animateIn='bounceInLeft' animateOut='fadeOut'>
                     <h3>Get in Touch! </h3>
                     </ScrollAnimation>
-                 <p>You can <a href="mailto:aimetacchi@hotmail.co.uk" >Email</a> me or you can find me on all these lovely social media platforms, see what i'm up too..</p>
+                 <p>You can <a href="mailto:aimeetacchi@hotmail.co.uk" >Email</a> me or you can find me on all these lovely social media platforms, see what i'm up too..</p>
                 {props.socials.map((social, i) => 
                 (
                 <div key={i} className="social-links"> 
