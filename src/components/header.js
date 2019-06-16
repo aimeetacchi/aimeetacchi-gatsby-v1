@@ -108,11 +108,14 @@ class Header extends Component {
     })
   }
 
-  
-
-  render() {
+  componentDidUpdate(){
+    console.log('component did update!!')
     this.state.active ?
     document.body.classList.add('hidden') : document.body.classList.remove('hidden');
+  }
+
+  render() {
+   
     return (
       <HeaderStyles>
        
