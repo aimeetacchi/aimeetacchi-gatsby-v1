@@ -5,7 +5,7 @@
 html {
   font-size: 10px;
   box-sizing: border-box;
-  overflow-y: scroll;
+  
 }
 * {
   box-sizing: inherit;
@@ -23,7 +23,7 @@ a {
 }
 
 body {
-  overflow:hidden;
+  overflow-x: hidden;
   font-family: $font_primary;
   font-weight: normal;
   word-wrap: break-word;
@@ -33,6 +33,10 @@ body {
   padding: 0;
   color: $color_light;
   background-color: $color1;
+}
+
+.hidden {
+  overflow: hidden;
 }
 img {
   max-width: 100%;

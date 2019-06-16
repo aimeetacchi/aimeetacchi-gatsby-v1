@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { Component } from 'react'
 import styled from "styled-components"
 
 const HeaderStyles = styled.header`
@@ -93,7 +93,7 @@ padding: 10px 0;
 `
 
 
-class Header extends React.Component {
+class Header extends Component {
   constructor(props) {
     super(props);
 
@@ -108,7 +108,11 @@ class Header extends React.Component {
     })
   }
 
+  
+
   render() {
+    this.state.active ?
+    document.body.classList.add('hidden') : document.body.classList.remove('hidden');
     return (
       <HeaderStyles>
        
