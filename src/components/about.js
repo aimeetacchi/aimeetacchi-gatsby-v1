@@ -38,7 +38,8 @@ const About = (props) => {
                     <h3>{props.headingTitle}</h3>
                     </ScrollAnimation>
                     
-                        <p>I'm Aimee a passionate self taught Front-end Web Developer and crazy cat girl based in Dunstable, Bedfordshire. I primarily focus on writing clean, elegant, &amp; efficient code.</p>
+                        <p>I'm Aimee: a passionate self-taught Front-End Web Developer and crazy cat girl, based in Dunstable, Bedfordshire. I focus primarily on writing clean, elegant and efficient code.</p>
+                        
                         <p>I have skills in HTML, CSS, SCSS, JavaScript, React &amp; Gatsby.</p>
                        
                        <Link to='/about' className='nav-link' style={{ textDecoration: 'none' }}> Read More..</Link>
