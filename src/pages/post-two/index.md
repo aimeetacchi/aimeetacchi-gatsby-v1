@@ -11,7 +11,7 @@ If this is your first time using React here are a few things you should know bef
 
 The first thing you want to do if you don’t have it is install node (higher than version 8.10), you can install that from https://nodejs.org you can either download it or install via the command line. To install via the command line you will do `brew install node` If you have homebrew installed. This will install you nodeJS which will also install npm for you. To check the versions you can do `npm -v` and `node -v` in the command line and it will show you the versions you have installed.
 
-Once you are all setup with that, you can get into installing React. We are going to use Create React App, which sets you up a boiler place app you can begin with. To install this you will run in your command line - `npm install -g create-react-app`
+Once you are all setup with that, you can get into installing React. We are going to use Create React App, which sets you up a boiler plate app you can begin with. To install this you will run in your command line - `npm install -g create-react-app`
 
 This will install you Create React app globally on your machine, this just makes our lives easier. Next you will want to cd into your projects folder, desktop or wherever you want to set up the react app you are going to create.
 
