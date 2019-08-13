@@ -471,7 +471,24 @@ ul {
 }
 
 // BLOG ====
+.blog {
+  @media (min-width: $tab) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .link {
+    @media (min-width: $tab) {
+      width: 48%;
+    }
 
+    @media (min-width: $desktop) {
+      width: 30%;
+    }
+  }
+
+}
 #blog-post {
   h1 {
     font-size: 39px;
@@ -482,6 +499,11 @@ ul {
     margin: 0;
     text-align: center;
   }
+}
+
+.link {
+  padding: 20px 0;
+  display: block;
 }
 
 // CONTACT STYLES ====

@@ -30,6 +30,8 @@ const Blog = () => (
         <div className="container">
         <SEO title="Page two" />
         <h2>Blog</h2>
+        <div className="blog">
+        
         {data.allMarkdownRemark.edges.map(({ node }, i) => (
           <Link key={i} to={node.fields.slug} className="link">
             <div className="post-list">
@@ -39,6 +41,8 @@ const Blog = () => (
             </div>
           </Link>
         ))}
+
+         </div>
       </div>
       </Layout>
     )}
