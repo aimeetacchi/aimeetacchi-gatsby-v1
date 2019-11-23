@@ -114,7 +114,8 @@ class Header extends Component {
     return (
       <HeaderStyles>
         <div className="logo">
-          <Link to="/" style={{ textDecoration: 'none' }}>
+          <Link onClick={this.state.active ? document.body.classList.add('hidden')
+      : document.body.classList.remove('hidden')} to="/" style={{ textDecoration: 'none' }}>
             <LogoH1>{this.props.siteName}</LogoH1>
           </Link>
         </div>

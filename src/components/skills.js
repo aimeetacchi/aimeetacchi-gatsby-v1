@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faHtml5, faCss3, faJs, faWordpress } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3, faJs, faReact, faVuejs, faWordpress } from '@fortawesome/free-brands-svg-icons';
 
 const Skills = () => {
 
@@ -17,7 +17,7 @@ const Skills = () => {
         },
         {
             name: 'Javascript',
-            level: '70%',
+            level: '80%',
             fontawesome: faJs
         },
         {
@@ -40,12 +40,12 @@ const Skills = () => {
         {
             name: 'React',
             level: '40%',
-            fontawesome: ''
+            fontawesome: faReact
         },
         {
-            name: 'Angular',
-            level: '30%',
-            fontawesome: ''
+            name: 'Vue',
+            level: '20%',
+            fontawesome: faVuejs
         },
        
     ]

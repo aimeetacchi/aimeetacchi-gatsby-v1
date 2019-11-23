@@ -4,21 +4,30 @@ const Experience = () => {
     return (
         <section className="experience-section">
             <h2>My Experience</h2>
-            <p>All my past and present work experience for the last 3 years.</p>
+            <p>All my past and present work experience for the last 3.5 years.</p>
+            <h3>Monogram Digital</h3>
+            <p><strong>Web Developer</strong> | Milton Keynes | August 2019 - current</p>
+
+            <hr />
 
             <h3>Barley House Agency</h3>
-            <p>Current Role: <strong>Web Developer</strong> | Cuffley, Hertfordshire | August 2018 - Current</p>
+            <p><strong>Web Developer</strong> | Cuffley, Hertfordshire | August 2018 - August 2019</p>
             <ul className="experience-list"> 
                 <li>Building custom designed websites and web applications using HTML,SCSS, Javascript & jQuery</li>
 
-                <li>Workflow tools included: HTML, Scss, Wordpress, jQuery, Glup and Git</li>
-                <li>Example: <a rel="noopener noreferrer" target='_blank' href='https://www.allanandbertram.com/'>Allan & Bertram</a></li>
+                <li>Workflow tools included: HTML, Scss, Wordpress, jQuery, Glup and Git. </li>
+                <li>Example - 
+                    <a rel="noopener noreferrer" target='_blank' href='https://www.allanandbertram.com/'>  Allan & Bertram, </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.lochinverhouse.com/">Lochinver House School, </a> 
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.groveroadprimary.co.uk/"> Grove Road School, </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.horven.beer/">Horven Beer</a></li>
+                    
             </ul>
 
             <hr />
 
             <h3>Big Marketing</h3>
-            <p><strong>Junior Front-End Web Developer</strong> | Milton Keynes | May 2017 - August 2018</p>
+            <p><strong>Front-End Web Developer</strong> | Milton Keynes | May 2017 - August 2018</p>
 
             <ul className="experience-list">
                 <li>Using HTML, CSS & Scss, jQuery & Javascript, Google Maps API, I was involved in the design and development of microsites, brochure sites, and e-commerce websites and HTML emails.</li>
