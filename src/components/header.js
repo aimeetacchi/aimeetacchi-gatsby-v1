@@ -114,7 +114,7 @@ class Header extends Component {
     return (
       <HeaderStyles>
         <div className="logo">
-          <Link onClick={} to="/" style={{ textDecoration: 'none' }}>
+          <Link to="/" style={{ textDecoration: 'none' }}>
             <LogoH1>{this.props.siteName}</LogoH1>
           </Link>
         </div>
