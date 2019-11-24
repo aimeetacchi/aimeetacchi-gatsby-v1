@@ -87,6 +87,7 @@ const NavLi = styled.li`
     background-color: #414073;
   }
 `
+let getClass = document.body.classList;
 
 class Header extends Component {
   constructor(props) {
@@ -109,13 +110,13 @@ class Header extends Component {
       ? document.body.classList.add('hidden')
       : document.body.classList.remove('hidden')
   }
-
   render() {
+   
     return (
       <HeaderStyles>
         <div className="logo">
-          <Link onClick={this.state.active ? document.body.classList.add('hidden')
-      : document.body.classList.remove('hidden')} to="/" style={{ textDecoration: 'none' }}>
+          <Link onClick={this.state.active ? getClass.add('hidden')
+      : getClass.remove('hidden')} to="/" style={{ textDecoration: 'none' }}>
             <LogoH1>{this.props.siteName}</LogoH1>
           </Link>
         </div>
