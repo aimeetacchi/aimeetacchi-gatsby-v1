@@ -103,6 +103,12 @@ class Header extends Component {
     })
   }
 
+  makeActive = () => {
+    this.setState({
+      active: false,
+    })
+  }
+
   componentDidUpdate() {
     console.log('component did update!!')
     this.state.active
@@ -114,7 +120,7 @@ class Header extends Component {
     return (
       <HeaderStyles>
         <div className="logo">
-          <Link to="/" style={{ textDecoration: 'none' }}>
+          <Link onClick={this.makeActive}  to="/" style={{ textDecoration: 'none' }}>
             <LogoH1>{this.props.siteName}</LogoH1>
           </Link>
         </div>
