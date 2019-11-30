@@ -136,7 +136,7 @@ class Header extends Component {
               <Link
                 to="/about"
                 className="nav-link"
-                onClick={this.isActive}
+                onClick={this.makeActive}
                 style={{ textDecoration: 'none' }}
               >
                 About
@@ -146,7 +146,7 @@ class Header extends Component {
               <Link
                 to="/blog"
                 className="nav-link"
-                onClick={this.isActive}
+                onClick={this.makeActive}
                 style={{ textDecoration: 'none' }}
               >
                 Blog
@@ -156,7 +156,7 @@ class Header extends Component {
               <Link
                 to="/projects"
                 className="nav-link"
-                onClick={this.isActive}
+                onClick={this.makeActive}
                 style={{ textDecoration: 'none' }}
               >
                 Projects
