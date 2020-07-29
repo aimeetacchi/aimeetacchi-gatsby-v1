@@ -4,12 +4,8 @@ const Experience = () => {
     return (
         <section className="experience-section">
             <h2>My Experience</h2>
-            <p>All my past and present work experience for the last 3.5 years.</p>
-            <h3>Monogram Digital</h3>
-            <p><strong>Web Developer</strong> | Milton Keynes | August 2019 - current</p>
-
-            <hr />
-
+            <p>All my past work experience for the last 3.5 years.</p>
+          
             <h3>Barley House Agency</h3>
             <p><strong>Web Developer</strong> | Cuffley, Hertfordshire | August 2018 - August 2019</p>
             <ul className="experience-list"> 
