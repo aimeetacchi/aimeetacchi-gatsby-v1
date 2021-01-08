@@ -37,7 +37,7 @@ const Projects = () => (
         <Layout>
             <div className="container">
                 <h2>Projects</h2>
-                <p>I hope you like my Javascript, jQuery & React projects I have  built, they are all written with clean code and developed so they are all using responsive design. I have a whole load of other things over on my codepen, also check out my github. Enjoy :D</p>
+                <p>I hope you like my personal Javascript, jQuery & React projects I have  built, they are all written with clean code and developed so they are all using responsive design. I have a whole load of other things over on my codepen, also check out my github. Enjoy :D</p>
                 <div className="recent-work">
                 {/* MAP OVER QUERY JSON and pass data to project component */}
                     {

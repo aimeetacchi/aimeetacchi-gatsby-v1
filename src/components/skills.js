@@ -22,7 +22,7 @@ const Skills = () => {
         },
         {
             name: 'Wordpress',
-            level: '60%',
+            level: '50%',
             fontawesome: faWordpress
         },
     ]
@@ -34,7 +34,7 @@ const Skills = () => {
         },
         {
             name: 'jQuery',
-            level: '60%',
+            level: '50%',
             fontawesome: '',
         },
         {
@@ -44,7 +44,7 @@ const Skills = () => {
         },
         {
             name: 'Vue',
-            level: '20%',
+            level: '30%',
             fontawesome: faVuejs
         },
        
@@ -78,6 +78,7 @@ const Skills = () => {
                     <ul className="skills-list">
                         <li className="sub">Design Skills</li>
                         <li>Wireframing</li>
+                        <li>Sketch</li>
                         <li>Photoshop</li>
                     </ul>
                 

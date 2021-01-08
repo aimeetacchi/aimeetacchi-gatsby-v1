@@ -4,23 +4,23 @@ const Experience = () => {
     return (
         <section className="experience-section">
             <h2>My Experience</h2>
-            <p>All my past and present work experience for the last 3.5 years.</p>
+            <p>All my past and present work experience for the last 4.5 years.</p>
             <h3>Monogram Digital</h3>
-            <p><strong>Web Developer</strong> | Milton Keynes | August 2019 - current</p>
+            <p><strong>Web Developer</strong> | Milton Keynes | Sept 2019 - current</p>
 
             <hr />
 
             <h3>Barley House Agency</h3>
-            <p><strong>Web Developer</strong> | Cuffley, Hertfordshire | August 2018 - August 2019</p>
+            <p><strong>Web Developer</strong> | Cuffley, Hertfordshire | August 2018 - Sept 2019</p>
             <ul className="experience-list"> 
-                <li>Building custom designed websites and web applications using HTML,SCSS, Javascript & jQuery</li>
+                <li>Building custom designed CMS websites and web applications using HTML,SCSS, Javascript & jQuery, PHP</li>
 
                 <li>Workflow tools included: HTML, Scss, Wordpress, jQuery, Glup and Git. </li>
                 <li>Example - 
                     <a rel="noopener noreferrer" target='_blank' href='https://www.allanandbertram.com/'>  Allan & Bertram, </a>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.lochinverhouse.com/">Lochinver House School, </a> 
                     <a target="_blank" rel="noopener noreferrer" href="https://www.groveroadprimary.co.uk/"> Grove Road School, </a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.horven.beer/">Horven Beer</a></li>
+                </li>
                     
             </ul>
 

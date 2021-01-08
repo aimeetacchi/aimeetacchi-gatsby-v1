@@ -20,7 +20,6 @@ const AboutImg = styled.img`
 `
 
 const About = (props) => {
-    
         return (
             <div id="about">
                  <ScrollAnimation animateIn='bounceInLeft'>
@@ -38,7 +37,7 @@ const About = (props) => {
                     <h3>{props.headingTitle}</h3>
                     </ScrollAnimation>
                     
-                        <p>I'm Aimee: a passionate self-taught Front-End Web Developer and crazy cat girl, based in Milton Keynes. I focus primarily on writing clean, elegant and efficient code.</p>
+                        <p>I'm Aimee: a passionate self-taught Front-End Web Developer and crazy cat girl, based in Dunstable. I focus primarily on writing clean, elegant and efficient code.</p>
                         
                         <p>I have skills in HTML, CSS, SCSS, JavaScript, React &amp; Gatsby.</p>
 
