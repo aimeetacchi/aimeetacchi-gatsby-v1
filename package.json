@@ -37,6 +37,9 @@
     "react-particles-js": "^2.7.0",
     "styled-components": "^4.4.1"
   },
+  "resolutions": {
+    "sharp": "0.24.0"
+  },
   "keywords": [
     "gatsby"
   ],
@@ -61,8 +64,5 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
-  "resolutions": {
-    "sharp": "0.24.0"
   }
 }

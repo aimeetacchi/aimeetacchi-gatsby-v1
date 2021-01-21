@@ -33,8 +33,20 @@ module.exports = {
         icons: [
           {
             // src: config.favicon,
-            src: 'src/data/icons/favicon.ico',
-            sizes: '128x128',
+            src: 'src/data/icons/favicon120x120.png',
+            sizes: '120x120',
+            type: 'image/png',
+          },
+          {
+            // src: config.favicon,
+            src: 'src/data/icons/apple-touch-icon-180x180.png',
+            sizes: '180x180',
+            type: 'image/png',
+          },
+          {
+            // src: config.favicon,
+            src: 'src/data/icons/apple-touch-icon-152x152.png',
+            sizes: '152x152',
             type: 'image/png',
           },
         ],
