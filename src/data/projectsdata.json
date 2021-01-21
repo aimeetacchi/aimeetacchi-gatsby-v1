@@ -4,8 +4,8 @@
         "slug": "react-calculator",
         "title": "React Calculator",
         "short_description": "A Create React app project, a simple calculator",
-        "description": "A Create React app project, a simple calculator at lets you add, multiple, subtract and divide with afew other features.",
-        "img": "./images/reactCalculator.jpg",
+        "description": "A Create React app project, a simple calculator at lets you add, multiple, subtract and divide with a few other features.",
+        "img": "./images/react-calculator.jpg",
         "link": "https://aimees-cal.netlify.com/",
         "skills": "ReactJS, JSX, SCSS,",
         "recent_work": true
