@@ -29,27 +29,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: 'src/data/icons/favicon.png',
-        icons: [
-          {
-            // src: config.favicon,
-            src: 'src/data/icons/favicon120x120.png',
-            sizes: '120x120',
-            type: 'image/png',
-          },
-          {
-            // src: config.favicon,
-            src: 'src/data/icons/apple-touch-icon-180x180.png',
-            sizes: '180x180',
-            type: 'image/png',
-          },
-          {
-            // src: config.favicon,
-            src: 'src/data/icons/apple-touch-icon-152x152.png',
-            sizes: '152x152',
-            type: 'image/png',
-          },
-        ],
+        icon: 'src/icons/favicon.png',
       },
     },
     `gatsby-remark-copy-linked-files`,
