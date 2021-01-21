@@ -110,22 +110,31 @@ class Header extends Component {
   }
 
   componentDidUpdate() {
-    console.log('component did update!!')
+    //console.log('component did update!!')
     this.state.active
       ? document.body.classList.add('hidden')
       : document.body.classList.remove('hidden')
   }
   render() {
-   
     return (
       <HeaderStyles>
         <div className="logo">
-          <Link onClick={this.makeActive}  to="/" style={{ textDecoration: 'none' }}>
+          <Link
+            onClick={this.makeActive}
+            to="/"
+            style={{ textDecoration: 'none' }}
+          >
             <LogoH1>{this.props.siteName}</LogoH1>
           </Link>
         </div>
 
-        <div onClick={this.isActive} id="burgermenu">
+        <div
+          role="menu"
+          tabIndex={0}
+          onKeyDown={this.isActive}
+          onClick={this.isActive}
+          id="burgermenu"
+        >
           <div id="bar" className={this.state.active ? 'rotatebar1' : null} />
           <div id="bar" className={this.state.active ? 'hidebar2' : null} />
           <div id="bar" className={this.state.active ? 'rotatebar3' : null} />

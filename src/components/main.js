@@ -76,7 +76,7 @@ const Main = () => (
                 </div>
 
                 {/* RECENT WORK */}
-                <ScrollAnimation duration='2' animateIn="bounceInRight">
+                <ScrollAnimation duration={2} animateIn="bounceInRight">
                 <div id="recent-work" className="container"> 
                     <div className="recent-work">
                         <div className="recent-work-title">
