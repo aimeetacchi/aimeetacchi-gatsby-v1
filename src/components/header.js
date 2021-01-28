@@ -1,8 +1,80 @@
+import React, { useState, useEffect } from 'react'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
-import React, { Component } from 'react'
 import styled from 'styled-components'
 
+const Header = ({ siteName }) => {
+  const [active, setActive] = useState(false)
+
+  useEffect(() => {
+    active
+      ? document.body.classList.add('hidden')
+      : document.body.classList.remove('hidden')
+  }, [active])
+
+  return (
+    <HeaderStyles>
+      <div className="logo">
+        <Link
+          onClick={() => setActive(false)}
+          to="/"
+          style={{ textDecoration: 'none' }}
+        >
+          <LogoH1>{siteName}</LogoH1>
+        </Link>
+      </div>
+
+      <div
+        role="menu"
+        tabIndex={0}
+        onKeyDown={() => setActive(!active)}
+        onClick={() => setActive(!active)}
+        id="burgermenu"
+      >
+        <div id="bar" className={active ? 'rotatebar1' : ''} />
+        <div id="bar" className={active ? 'hidebar2' : ''} />
+        <div id="bar" className={active ? 'rotatebar3' : ''} />
+      </div>
+      <NavStyles className={active ? 'toogleNav' : ''}>
+        <NavItems>
+          <NavLi>
+            <NavLink
+              to="/about"
+              className="nav-link"
+              onClick={() => setActive(false)}
+            >
+              About
+            </NavLink>
+          </NavLi>
+          <NavLi>
+            <NavLink
+              to="/blog"
+              className="nav-link"
+              onClick={() => setActive(false)}
+            >
+              Blog
+            </NavLink>
+          </NavLi>
+          <NavLi>
+            <NavLink
+              to="/projects"
+              className="nav-link"
+              onClick={() => setActive(false)}
+            >
+              Projects
+            </NavLink>
+          </NavLi>
+        </NavItems>
+      </NavStyles>
+    </HeaderStyles>
+  )
+}
+
+Header.propTypes = {
+  siteName: PropTypes.string,
+}
+
+// STYLES ===
 const HeaderStyles = styled.header`
   display: flex;
   justify-content: space-between;
@@ -23,14 +95,13 @@ const HeaderStyles = styled.header`
   }
 `
 const NavStyles = styled.nav`
-  background-color: #4956ba;
+  background: rgba(73, 86, 186, 0.9);
   position: absolute;
   top: 8vh;
   left: 0;
   width: 100%;
   height: 400vh;
   z-index: 9;
-  opacity: 0.9;
   display: none;
 
   @media (min-width: 720px) {
@@ -38,9 +109,8 @@ const NavStyles = styled.nav`
     position: static;
     width: 20%;
     height: auto;
-    opacity: 1;
     margin-left: 25px;
-    background-color: transparent;
+    background: rgba(10, 17, 40, 1);
   }
 `
 const LogoH1 = styled.h1`
@@ -79,107 +149,15 @@ const NavItems = styled.ul`
 const NavLi = styled.li`
   width: 100%;
   text-align: center;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
   padding: 10px 0;
-
-  &:hover {
-    background-color: #414073;
-  }
 `
 
-class Header extends Component {
-  constructor(props) {
-    super(props)
+const NavLink = styled(Link)`
+  text-decoration: 'none';
 
-    this.state = {
-      active: false,
-    }
+  &:hover {
+    color: #a6b1e1;
   }
-
-  isActive = () => {
-    this.setState({
-      active: !this.state.active,
-    })
-  }
-
-  makeActive = () => {
-    this.setState({
-      active: false,
-    })
-  }
-
-  componentDidUpdate() {
-    //console.log('component did update!!')
-    this.state.active
-      ? document.body.classList.add('hidden')
-      : document.body.classList.remove('hidden')
-  }
-  render() {
-    return (
-      <HeaderStyles>
-        <div className="logo">
-          <Link
-            onClick={this.makeActive}
-            to="/"
-            style={{ textDecoration: 'none' }}
-          >
-            <LogoH1>{this.props.siteName}</LogoH1>
-          </Link>
-        </div>
-
-        <div
-          role="menu"
-          tabIndex={0}
-          onKeyDown={this.isActive}
-          onClick={this.isActive}
-          id="burgermenu"
-        >
-          <div id="bar" className={this.state.active ? 'rotatebar1' : null} />
-          <div id="bar" className={this.state.active ? 'hidebar2' : null} />
-          <div id="bar" className={this.state.active ? 'rotatebar3' : null} />
-        </div>
-        <NavStyles className={this.state.active ? 'toogleNav' : null}>
-          <NavItems>
-            <NavLi>
-              <Link
-                to="/about"
-                className="nav-link"
-                onClick={this.makeActive}
-                style={{ textDecoration: 'none' }}
-              >
-                About
-              </Link>
-            </NavLi>
-            <NavLi>
-              <Link
-                to="/blog"
-                className="nav-link"
-                onClick={this.makeActive}
-                style={{ textDecoration: 'none' }}
-              >
-                Blog
-              </Link>
-            </NavLi>
-            <NavLi>
-              <Link
-                to="/projects"
-                className="nav-link"
-                onClick={this.makeActive}
-                style={{ textDecoration: 'none' }}
-              >
-                Projects
-              </Link>
-            </NavLi>
-          </NavItems>
-        </NavStyles>
-      </HeaderStyles>
-    )
-  }
-}
-
-Header.propTypes = {
-  siteName: PropTypes.string,
-}
+`
 
 export default Header
