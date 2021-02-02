@@ -168,6 +168,10 @@ nav {
   @media screen and (min-width: $tab) {
     background: transparent;
   }
+
+  .nav-link {
+    transition: color 0.2s ease-in-out;
+  }
 }
 
 .light-theme {
@@ -194,11 +198,9 @@ nav {
     }
   }
   .nav-link {
-    color: $color_two;
-
     &:hover,
     &:active {
-      color: darken($color_two, 10%);
+      color: darken($color_two, 30%);
     }
   }
 
@@ -254,7 +256,10 @@ nav {
 
     &:hover,
     &:active {
-      color: $color_two;
+      color: darken($color_two, 30%);
+      @media screen and (min-width: $tab) {
+        color: $color_two;
+      }
     }
   }
 
