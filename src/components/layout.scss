@@ -164,7 +164,10 @@ ul {
 }
 
 nav {
-  background-color: rgba(73, 86, 186, 0.9);
+  background: rgba(73, 86, 186, 0.9);
+  @media screen and (min-width: $tab) {
+    background: transparent;
+  }
 }
 
 .light-theme {
