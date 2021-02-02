@@ -6,19 +6,8 @@ import styled from 'styled-components'
 import 'animate.css/animate.min.css'
 import ScrollAnimation from 'react-animate-on-scroll'
 
-const AboutImg = styled.img`
-  border: 5px solid $color5;
-  display: block;
-  border-radius: 100%;
-  width: 300px;
-  margin: 0 auto;
-
-  @media screen and (min-width: $tab) {
-    width: 100%;
-  }
-`
-
 const About = props => {
+  const { headingTitle } = props
   return (
     <div id="about">
       <ScrollAnimation animateIn="bounceInLeft">
@@ -31,7 +20,7 @@ const About = props => {
 
         <div className="about__content">
           <ScrollAnimation animateIn="fadeIn">
-            <h3>{props.headingTitle}</h3>
+            <h3>{headingTitle}</h3>
           </ScrollAnimation>
 
           <p>
@@ -54,7 +43,6 @@ const About = props => {
             className="nav-link"
             style={{ textDecoration: 'none' }}
           >
-            {' '}
             Read More..
           </Link>
         </div>
@@ -62,5 +50,17 @@ const About = props => {
     </div>
   )
 }
+
+const AboutImg = styled.img`
+  border: 5px solid $color5;
+  display: block;
+  border-radius: 100%;
+  width: 300px;
+  margin: 0 auto;
+
+  @media screen and (min-width: $tab) {
+    width: 100%;
+  }
+`
 
 export default About

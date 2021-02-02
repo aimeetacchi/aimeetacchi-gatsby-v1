@@ -23,7 +23,7 @@ const About = props => {
         </p>
         <h2>Skills &amp; Experience</h2>
         <Skills />
-        <Experience />
+        {/* <Experience /> */}
       </div>
     </Layout>
   )

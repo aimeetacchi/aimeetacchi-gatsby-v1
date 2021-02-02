@@ -8,28 +8,24 @@ import Header from '../components/header'
 import './layout.scss'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab, faLinkedin, faTwitter, faCodepen, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import {
+  fab,
+  faLinkedin,
+  faTwitter,
+  faCodepen,
+  faGithub,
+  faInstagram,
+} from '@fortawesome/free-brands-svg-icons'
 
 library.add(fab, faLinkedin, faTwitter, faCodepen, faGithub, faInstagram)
 
-
-// Footer Styles ===
-const FooterStyle = styled.footer`
-/* background-color: ${props =>
-    (props.theme.primary && '$primary') || (props.theme.danger && '$danger')
-  }; */
-color: #f1f1f1;
-font-size: .7em;
-padding: 5em 0;
-text-align: center;
-`
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
         site {
           siteMetadata {
-            siteName,
+            siteName
             author
           }
         }
@@ -41,7 +37,8 @@ const Layout = ({ children }) => (
           <Header siteName={data.site.siteMetadata.siteName} />
           {children}
           <FooterStyle danger>
-            {data.site.siteMetadata.author} | Front End Developer © {new Date().getFullYear()}, Built with
+            {data.site.siteMetadata.author} | Front End Developer ©{' '}
+            {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </FooterStyle>
@@ -54,5 +51,12 @@ const Layout = ({ children }) => (
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
+
+// Footer Styles ===
+const FooterStyle = styled.footer`
+  font-size: 0.7em;
+  padding: 5em 0;
+  text-align: center;
+`
 
 export default Layout

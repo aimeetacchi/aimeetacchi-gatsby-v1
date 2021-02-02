@@ -3,14 +3,43 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const Header = ({ siteName }) => {
+import ThemeSwitch from './themeSwitch'
+
+const Header = props => {
+  const { siteName } = props
   const [active, setActive] = useState(false)
+  const [checked, setChecked] = useState(false)
+
+  const toggleTheme = () => {
+    console.log('Calling Toggle Theme')
+    // toggling checked from True/False
+    setChecked(!checked)
+    // Dark mode will only be in local storage if Checked is True, if there is darkmode set then Remove it.
+    localStorage.getItem('darkMode') && localStorage.removeItem('darkMode')
+  }
 
   useEffect(() => {
+    const darkMode = localStorage.getItem('darkMode')
+
+    if (darkMode) {
+      console.log('There is local storage')
+      setChecked(true)
+    }
+
     active
       ? document.body.classList.add('hidden')
       : document.body.classList.remove('hidden')
-  }, [active])
+
+    if (checked) {
+      document.body.classList.add('dark-theme')
+      document.body.classList.remove('light-theme')
+      localStorage.setItem('darkMode', JSON.stringify(checked))
+    } else {
+      document.body.classList.add('light-theme')
+      document.body.classList.remove('dark-theme')
+      localStorage.removeItem('darkMode')
+    }
+  }, [active, checked])
 
   return (
     <HeaderStyles>
@@ -35,6 +64,7 @@ const Header = ({ siteName }) => {
         <div id="bar" className={active ? 'hidebar2' : ''} />
         <div id="bar" className={active ? 'rotatebar3' : ''} />
       </div>
+
       <NavStyles className={active ? 'toogleNav' : ''}>
         <NavItems>
           <NavLi>
@@ -66,6 +96,7 @@ const Header = ({ siteName }) => {
           </NavLi>
         </NavItems>
       </NavStyles>
+      <ThemeSwitch checked={checked} toggleTheme={toggleTheme} />
     </HeaderStyles>
   )
 }
@@ -81,8 +112,8 @@ const HeaderStyles = styled.header`
   align-items: center;
   margin: 0;
   height: 8vh;
-  background-color: #0a1128;
   position: relative;
+  padding: 0 10px;
   z-index: 10;
 
   @media (min-width: 720px) {
@@ -95,7 +126,7 @@ const HeaderStyles = styled.header`
   }
 `
 const NavStyles = styled.nav`
-  background: rgba(73, 86, 186, 0.9);
+  /* background: rgba(73, 86, 186, 0.9); */
   position: absolute;
   top: 8vh;
   left: 0;
@@ -110,18 +141,16 @@ const NavStyles = styled.nav`
     width: 20%;
     height: auto;
     margin-left: 25px;
-    background: rgba(10, 17, 40, 1);
+    /* background: rgba(10, 17, 40, 1); */
   }
 `
 const LogoH1 = styled.h1`
-  color: #f1f1f1;
   font-size: 1.8em;
   line-height: 1.2;
   margin: 0;
   padding: 0 0.2em 0;
   font-family: 'Fjalla One', sans-serif;
 `
-
 const NavItems = styled.ul`
   font-size: 3em;
   font-weight: 700;
@@ -151,7 +180,6 @@ const NavLi = styled.li`
   text-align: center;
   padding: 10px 0;
 `
-
 const NavLink = styled(Link)`
   text-decoration: 'none';
 
